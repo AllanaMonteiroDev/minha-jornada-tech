@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>MinhaJornadaTech - Painel de Candidaturas</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- Topo da página -->
+  <header>
+    <h1>Minha Jornada Tech</h1>
+    <p>Projeto para prática de HTML, CSS e JS.</p>
+  </header>
+
+  <main>
+
+    <!-- RESUMO -->
+    <section>
+      <h2>Resumo</h2>
+
+      <div class="resumo">
+        <div>
+          <h3>Total</h3>
+          <p id="total">0</p>
+        </div>
+
+        <div>
+          <h3>Entrevistas</h3>
+          <p id="entrevistas">0</p>
+        </div>
+
+        <div>
+          <h3>Recusadas</h3>
+          <p id="recusadas">0</p>
+        </div>
+
+        <div>
+          <h3>Em análise</h3>
+          <p id="analise">0</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- FORMULÁRIO -->
+    <section>
+      <h2>Adicionar Nova Vaga</h2>
+
+      <form id="form-vaga">
+        <input type="text" id="empresa" placeholder="Nome da Empresa">
+        <input type="text" id="vaga" placeholder="Nome da Vaga">
+        <input type="url" placeholder="Link da Vaga">
+        <input type="text" id="local" placeholder="Local">
+        <input type="text" placeholder="Salário">
+
+        <select>
+          <option>Selecione a Modalidade</option>
+          <option>Remoto</option>
+          <option>Híbrido</option>
+          <option>Presencial</option>
+        </select>
+
+       <select id="status">
+  <option>Selecione o Status</option>
+  <option>Quero me Candidatar</option>
+  <option>Currículo Enviado</option>
+  <option>Em Análise</option>
+  <option>Entrevista Marcada</option>
+  <option>Teste Técnico</option>
+  <option>Aprovado</option>
+  <option>Recusado</option>
+</select>
+</select>
+        <input type="date">
+        <textarea placeholder="Observações"></textarea>
+
+        <button type="submit">Salvar Vaga</button>
+      </form>
+    </section>
+
+    <!-- FILTRO -->
+    <section>
+      <h2>Filtrar Vagas</h2>
+
+      <select id="filtro-status">
+        <option>Todas</option>
+        <option>Quero me Candidatar</option>
+        <option>Currículo Enviado</option>
+        <option>Em Análise</option>
+        <option>Entrevista Marcada</option>
+        <option>Teste Técnico</option>
+        <option>Aprovado</option>
+        <option>Recusado</option>
+      </select>
+    </section>
+
+    <!-- LISTA DE VAGAS -->
+    <section>
+      <h2>Minhas Vagas</h2>
+
+      <div class="lista-vagas" id="lista-vagas">
+        <p>Nenhuma vaga cadastrada ainda.</p>
+      </div>
+    </section>
+
+  </main>
+<script src="script.js"></script>
+</body>
+</html>
